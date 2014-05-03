@@ -11,7 +11,7 @@ SearchEngine.searchController = function ($scope, searchService) {
         }
     });
 
-    $scope.changeIndex = function ($event) {
+    $scope.searchTyped = function ($event) {
         if (!$scope.focusControl) {
             $scope.focusControl = true;
             $scope.searchCriteria += $event.char;

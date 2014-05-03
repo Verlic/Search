@@ -1,1 +1,2 @@
 ﻿var SearchEngine = {};
+SearchEngine.directives = {};

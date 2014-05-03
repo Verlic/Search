@@ -47,8 +47,7 @@ body {
 
 
 .content {
-    color: rgb(100,100,100);
-    padding: 20px;
+    color: rgb(100,100,100);    
     overflow-x: auto;
 
     h1, h2, h3, h4, h5 {
@@ -62,6 +61,10 @@ body {
 
     header {
         margin-bottom: 10px;
+    }
+
+    .container{
+        padding: 20px;
     }
 
     .search-box {
@@ -118,4 +121,16 @@ body {
             }
         }
     }
+}
+
+.animate-enter {
+    -moz-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    opacity: 0;
+}
+
+.animate-enter.animate-enter-active{
+    opacity:0;
 }

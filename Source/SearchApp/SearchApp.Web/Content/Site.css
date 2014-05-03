@@ -35,7 +35,6 @@
 }
 .content {
   color: #646464;
-  padding: 20px;
   overflow-x: auto;
 }
 .content h1,
@@ -51,6 +50,9 @@
 }
 .content header {
   margin-bottom: 10px;
+}
+.content .container {
+  padding: 20px;
 }
 .content .search-box {
   background-color: #dcdcdc;
@@ -98,5 +100,15 @@
 .content .results-wrapper .results-panel .search-group div {
   position: absolute;
   top: 0;
+}
+.animate-enter {
+  -moz-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  -webkit-transition: 1s linear all;
+  transition: 1s linear all;
+  opacity: 0;
+}
+.animate-enter.animate-enter-active {
+  opacity: 0;
 }
 /*# sourceMappingURL=Site.css.map */

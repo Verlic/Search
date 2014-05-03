@@ -21,10 +21,13 @@
                 .Include("~/Scripts/jquery-{version}.js")
                 .Include("~/Scripts/modernizr-{version}.js")
                 .Include("~/Scripts/angular.js")
-                .Include("~/Scripts/angular-resource.js"));
+                .Include("~/Scripts/angular-resource.js")
+                .Include("~/Scripts/angular-ui.js")
+                .Include("~/Scripts/angular-ui/ui-utils.js"));
 
             bundles.Add(
                 new ScriptBundle("~/scripts/app").Include("~/Application/app.js")
+                    .IncludeDirectory("~/Application/directives", "*.js")
                     .IncludeDirectory("~/Application/services", "*.js")
                     .IncludeDirectory("~/Application/controllers", "*.js")
                     .IncludeDirectory("~/Application/modules", "*.js"));

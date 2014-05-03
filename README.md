@@ -8,4 +8,4 @@ This simple app showcase how to integrate AngularJS as a front-end framework wit
 
 - [Visual Studio 2013 Express for Web](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx) (FREE) or greater.
 
-![SearchApp](https://github.com/Verlic/Search/blob/master/Images/searchapp.png)
+![SearchApp](https://github.com/Verlic/Search/blob/master/Images/searchapp.png?raw)

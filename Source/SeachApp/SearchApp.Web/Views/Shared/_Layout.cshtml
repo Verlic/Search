@@ -1,0 +1,22 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchApp</title>
+    @Styles.Render("~/styles/core")
+</head>
+    <body>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <div class="nav-bar fixed bottom">
+            <ul class="stack horizontal">
+                <li><div class="brand">SearchEngine</div></li>
+            </ul>
+        </div>
+        @Scripts.Render("~/scripts/angular")
+        @RenderSection("scripts", false)
+    </body>
+</html>

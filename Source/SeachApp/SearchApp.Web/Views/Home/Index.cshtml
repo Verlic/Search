@@ -1,0 +1,30 @@
+﻿@using System.Web.Optimization
+@{
+
+}
+<div ng-app="search" ng-controller="searchController">
+    <header>
+        <h3>Search</h3>
+        <h5>Start typing...</h5>
+    </header>
+    <div>
+        <input type="text" class="search-box" ng-model="searchCriteria" />
+    </div>
+    <div class="results-wrapper">
+        <div class="results-panel">
+            <div class="search-group" ng-repeat="group in searchGroups">
+                <div>
+                    <h5 ng-cloak>{{group.title}}</h5>
+                    <hr />
+                    <ul class="stack">
+                        <li ng-cloak ng-repeat="item in group.results">{{item.title}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/scripts/app")
+}

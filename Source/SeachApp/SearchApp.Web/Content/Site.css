@@ -1,0 +1,102 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI';
+  background-color: #dcdcdc;
+}
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #1e1e1e;
+  padding: 0 20px;
+}
+.nav-bar.fixed {
+  position: fixed;
+}
+.nav-bar.fixed.bottom {
+  bottom: 0;
+}
+.nav-bar .brand {
+  padding: 0 10px;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #323232;
+}
+.stack {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.stack.horizontal > li {
+  display: inline;
+}
+.content {
+  color: #646464;
+  padding: 20px;
+  overflow-x: auto;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  margin: 0;
+  padding: 0;
+}
+.content h3 {
+  text-transform: uppercase;
+}
+.content header {
+  margin-bottom: 10px;
+}
+.content .search-box {
+  background-color: #dcdcdc;
+  font-size: 4em;
+  color: #323232;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+}
+.content .search-box::-ms-clear {
+  display: none;
+}
+.content .results-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  top: 200px;
+}
+.content .results-wrapper .results-panel {
+  height: 100%;
+  padding-left: 40px;
+  margin-top: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.content .results-wrapper .results-panel .search-group {
+  position: relative;
+  height: 100%;
+  width: 220px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 23px;
+}
+.content .results-wrapper .results-panel .search-group:first-child {
+  margin-left: 0;
+}
+.content .results-wrapper .results-panel .search-group label {
+  font-weight: bold;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+.content .results-wrapper .results-panel .search-group div {
+  position: absolute;
+  top: 0;
+}
+/*# sourceMappingURL=Site.css.map */
